@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite
+}
+*{
+    margin:0;
+    padding:0;
+}
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+nav ul li{
+    padding:10px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color:black;
+    color:white;
+    align-items:center;
+}
+.brand img{
+    height: 60px;
+    width: 60px;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color:white;
+    font-family: "Varela Round", sans-serif;
+    display:flex;
+    width:70%;
+    margin:15px auto;
+    padding: 15px;
+    border-radius: 12px;
+    background-image:url('back.jpg');
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+.SongList h1{
+    margin-bottom: 30px;
+}
+.SongItem{
+    display: flex;
+    justify-content:space-between;
+    background-color:antiquewhite;
+    color:black;
+    display:flex;
+    padding: 0 15px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    align-items: center;
+    border-radius: 30px;
+    gap:20px;
+    cursor: pointer;
+}
+.songlistplay{
+    display:flex;
+    
+}
+.songImage{
+    height:35px;
+    width:35px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+.brand{
+    color:white;
+    align-items: center;
+    display: flex;
+    font-weight:bolder;
+    font-size:1.3rem;
+}
+.botton {
+    position :sticky;
+    height:90px;
+    background-color: black;
+    color:white;
+    bottom:0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor:pointer;
+}
+#myProgressBar{
+    width: 95vw;
+    cursor:pointer;
+}
+#gif{
+    width: 60px;
+    height:15px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.playing{
+    position: absolute;
+    left:100px;
+}
